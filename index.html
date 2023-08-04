@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body>
+    <section class="form-section">
+      <form class="form" id="sign-up" action="#" method="get" novalidate>
+        <div class="input-field">
+          <label for="username">Enter User Name</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="user name"
+            required
+          />
+          <span class="error-message" id="username-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="email">Enter Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            minlength="5"
+            required
+          />
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="password">Enter Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <span class="error-message" id="password-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="email">Personal Number</label>
+          <input
+            type="text"
+            id="number"
+            name="number"
+            placeholder="personal number"
+            required
+          />
+          <span class="error-message" id="number-error"></span>
+        </div>
+        <div class="input-field">
+          <label for="email">Mobile Number</label>
+          <input
+            type="text"
+            id="tel"
+            name="tel"
+            placeholder="mobile number"
+            required
+          />
+          <span class="error-message" id="tel-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="username">Job Description</label>
+          <input
+            type="text"
+            id="job"
+            name="job"
+            placeholder="job description"
+          />
+          <span class="error-message" id="job-error"></span>
+        </div>
+
+        <div class="input-field">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <button class="open-sign-in">open sign in</button>
+
+    <div class="modal" id="sign-up-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>sign-up-modal</h3>
+          <button class="modal-close">X</button>
+        </div>
+        <div class="modal-body">this is modal body</div>
+      </div>
+    </div>
+
+    <div class="modal" id="sign-in-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>sign-in-modal</h3>
+          <button class="modal-close">X</button>
+        </div>
+        <div class="modal-body">this is modal body</div>
+      </div>
+    </div>
+
+    <script src="src/js/scrypt.js"></script>
+  </body>
+</html>
