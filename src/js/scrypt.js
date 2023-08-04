@@ -94,7 +94,7 @@ function isTelValid() {
     tel.classList.add("error");
     return false;
   } else if (tel.value.length !== 9) {
-    telError.innerText = "Personal number must consist of 9 numbers";
+    telError.innerText = "Mobile number must consist of 9 numbers";
     tel.classList.remove("correct");
     tel.classList.add("error");
     return false;
